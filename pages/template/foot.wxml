@@ -1,0 +1,7 @@
+<template name="foot">
+ <view class='tab'>
+      <view><text></text>首页</view>
+      <view>我的行程</view>
+      <view>个人中心</view>
+  </view>
+</template>

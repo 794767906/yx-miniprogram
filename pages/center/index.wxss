@@ -1,0 +1,16 @@
+.center_top{
+  padding:60rpx 0 60rpx 60rpx;
+}
+.center_top image{
+  width:120rpx;
+  height:120rpx;
+  display:block;
+  border-radius:20rpx;
+  float:left;
+}
+.center_top text{
+  float:left;
+  width:300px
+  padding-left:40rpx;
+  display:block;
+}

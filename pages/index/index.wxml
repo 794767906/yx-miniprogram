@@ -1,13 +1,88 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+  </swiper>
+  <!-- 优质路线推荐 -->
+  <view class="route">
+    <text class='title'>优质路线推荐</text>
+    <view class='list'>
+      <view class='img'><image src='../images/a.jpg'></image><image class='hot' src='../images/hot.png'></image></view>
+      <view class='list_left'>
+          <text class='name'>山东半岛的滨海之城</text>
+          <text class='price'>
+              <text class='nowprice'>￥459</text>
+              <text class='yuanprice'>原价：<text>192823</text></text>
+          </text>
+      </view>
+      <view class='list_right'>
+          <image src="../images/jiazhangtuan.png"></image>
+          <text>2839人已加入</text>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='img'><image src='../images/a.jpg'></image></view>
+      <view class='list_left'>
+          <text class='name'>福州永泰中国云顶</text>
+          <text class='price'>
+              <text class='nowprice'>￥459</text>
+              <text class='yuanprice'>原价：<text>192823</text></text>
+          </text>
+      </view>
+      <view class='list_right'>
+          <image src="../images/xueshengtuan.png"></image>
+          <text>2839人已加入</text>
+      </view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <!-- 往期精彩路线 -->
+   <view class="route wonderful">
+    <text class='title'>往期精彩路线</text>
+    <view class='list'>
+      <view class='img'><image src='../images/xiaoa.jpg'></image></view>
+      <view class='list_left'>
+          <text class='name'>“北方马尔代夫”月坨岛乐享两日游</text>
+          <view class='price'>
+             <text class='nowprice'>￥459</text>
+              <text class='people'>565656人已加入</text>
+          </view>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='img'><image src='../images/a.jpg'></image></view>
+      <view class='list_left'>
+          <text class='name'>北方马尔代夫月坨岛乐享两日游</text>
+          <view class='price'>
+              <text class='nowprice'>￥459</text>
+              <text class='people'>565656人已加入</text>
+          </view>
+      </view>
+    </view>
+     <view class='list'>
+      <view class='img'><image src='../images/xiaoa.jpg'></image></view>
+      <view class='list_left'>
+          <text class='name'>北方马尔代夫月坨岛乐享两日游</text>
+          <view class='price'>
+             <text class='nowprice'>￥459</text>
+              <text class='people'>565656人已加入</text>
+          </view>
+      </view>
+    </view>
+    <view class='list'>
+      <view class='img'><image src='../images/a.jpg'></image></view>
+      <view class='list_left'>
+          <text class='name'>北方马尔代夫月坨岛乐享两日游</text>
+          <view class='price'>
+              <text class='nowprice'>￥459</text>
+              <text class='people'>565656人已加入</text>
+          </view>
+      </view>
+    </view>
   </view>
+  <!-- <import src="../template/foot"/>
+  <template is="foot"></template> -->
 </view>

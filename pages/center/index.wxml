@@ -1,0 +1,7 @@
+<view class='center_top'>
+  <image src="../images/xiaoa.jpg"></image>
+  <view>
+      <text>得意的小女生</text>
+      <text>139****12345</text>
+  </view>
+</view>
