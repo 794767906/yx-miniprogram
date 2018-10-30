@@ -1,0 +1,11 @@
+<view class='container'>
+    <view class='underway'>
+        <view class="dateday"><view><text></text></view><text>2018.11.10</text></view>
+        <text>路线名称共两行，路线名称共两行，路名称共两行</text>
+        <view class='pic_con'><text>教师：张章</text><text class='pic'>行程将于十天后进行</text></view>
+    </view>
+    <view class='underway_content'>
+        <text>行程注意事项</text>
+        <image src='../images/xiaoa.jpg' bindload="imageLoad"style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+    </view>
+  </view>

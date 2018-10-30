@@ -1,0 +1,173 @@
+page {
+  background-color: #f1f6fb;
+}
+.container{
+  text-align: left;
+  color:#333;
+  padding-bottom:40rpx;
+}
+.dateday{
+  line-height:90rpx;
+  padding-top:10rpx;
+  text-align: left;
+  display:block;
+   width:670rpx;
+   font-size:50rpx;
+  margin:0 auto;
+  font-weight:900;
+}
+.content{
+  background:#fff;
+  padding:20rpx;
+  border-radius:20rpx;
+  width:670rpx;
+  height:280rpx;
+  margin:0 auto;
+  box-sizing:border-box;
+  box-shadow:0px 0px 20px rgba(170,187,205,0.25);
+}
+.content>image{
+  width:240rpx;
+  height:240rpx;
+  float:left;
+  border-radius:20rpx
+}
+.content .right{
+  width:360rpx;
+  margin-left:30rpx;
+  float:left;
+  padding-top:15rpx;
+}
+.content .right>text{
+  font-size:34rpx;
+  display: block;
+  line-height:45rpx;
+}
+.content .right>view{
+  font-size:28rpx;
+  margin-top:40rpx;
+  position:relative;
+}
+.content .right>view text{
+  display:block;
+}
+.content .right>view image{
+ position:absolute;
+ top:12rpx;
+ right:0;
+  width:135rpx;
+  height:75rpx;
+}
+ .finish .right>view text{
+  color:#a0a0a0;
+}
+.finish .dateday{
+  color:#a0a0a0;
+}
+.dateday {
+  position: relative;
+  padding-left:50rpx;
+  box-sizing:border-box;
+}
+.dateday view{
+        width:34rpx;
+        height:34rpx;
+        border-radius:50%;
+        position: absolute;
+        left:0;
+        top:30rpx;
+    }
+  .underway .dateday view text{
+        position:absolute;
+        top:8px;
+        left:8px;
+        width:18rpx;
+        height: 18rpx;
+        background:#3cc43f;
+        border-radius:50%;
+        display:block;
+        white-space: nowrap;
+        text-align: center;
+    }
+     .tobegin .dateday  view text{
+        position:absolute;
+        top:6px;
+        left:6px;
+        width:22rpx;
+        height: 22rpx;
+        background:#ffd52e;
+        border-radius:50%;
+        display:block;
+     
+    }
+      .finish .dateday  view text{
+        position:absolute;
+        top:6px;
+        left:6px;
+        width:22rpx;
+        height: 22rpx;
+        background:#d4d4d4;
+        border-radius:50%;
+        display:block;
+    }
+     .underway .dateday view text::before{
+         content:'';
+        width:18rpx;
+        height:18rpx;
+        border-radius:50%;
+        position:absolute;
+        background:#3cc43f;
+        top:0px;
+        left:0px;
+        animation: mydot 1.5s infinite ease;
+        animation-delay: 0.4s;
+        z-index: 0
+    }
+
+ @keyframes mydot{
+       0%{
+        transform: scale(1);
+       }
+       10%{
+        transform: scale(1.3);
+         opacity: 0.6;
+       }
+       20%{
+        transform: scale(1.5);
+        opacity: 0.6;
+       }
+       30%{
+        transform: scale(1.7);
+        opacity: 0.5;
+       }
+       40%{
+        transform: scale(1.9);
+        opacity: 0.4;
+       }
+       50%{
+        transform: scale(2);
+        opacity: 0.3;
+       }
+       60%{
+        transform: scale(2.1);
+        opacity: 0.2;
+       }
+       70%{
+           transform: scale(2.5);
+           opacity: 0.1;
+ 
+       }
+       80%{
+           transform:scale(2.6);
+           opacity: 0.05;
+       }
+       90%{
+           transform:scale(2.7);
+           opacity:0.1;
+       }
+ 
+       100%{
+           transform: scale(2.8);
+           opacity: 0; 
+       }
+   }

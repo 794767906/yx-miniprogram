@@ -1,0 +1,47 @@
+<view class='container'>
+  <!-- 代开始 -->
+  <view class='tobegin' bindtap='bb'>
+    <view class="dateday"><view><text></text></view><text>2018.11.10</text></view>
+    <view class='content' >
+      <image src='../images/a.jpg'></image>
+      <view class='right'>
+        <text>山东半岛的滨海之城山东岛的滨海之城</text>
+        <view>
+          <text>2018.11.10</text>
+          <text>教师：张小华</text>
+          <image src='../images/yiwancheng.png'></image>
+        </view>
+      </view>
+    </view>
+   </view>
+     <!-- 进行中 -->
+     <view class='underway' bindtap='aa'>
+      <view class="dateday"><view><text></text></view><text>2018.11.10</text></view>
+      <view class='content'>
+        <image src='../images/a.jpg'></image>
+        <view class='right'>
+          <text>山东半岛的滨海之城山东岛的滨海之城</text>
+          <view>
+            <text>2018.11.10</text>
+            <text>教师：张小华</text>
+            <image src='../images/jinxingzhong.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+     <!-- 已完成 -->
+     <view class='finish'>
+      <view class="dateday "><view><text></text></view><text>2018.11.10</text></view>
+      <view class='content'>
+        <image src='../images/a.jpg'></image>
+        <view class='right'>
+          <text>山东半岛的滨海之城山东岛的滨海之城</text>
+          <view>
+            <text>2018.11.10</text>
+            <text>教师：张小华</text>
+            <image src='../images/wancheng.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

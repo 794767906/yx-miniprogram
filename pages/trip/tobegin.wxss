@@ -1,0 +1,141 @@
+page {
+  background-color: #f1f6fb;
+}
+.container{
+  background:#f1f6fb;
+  color:#333;
+
+  }
+.underway{
+  background:#fff;
+  box-shadow:0px 0px 20px rgba(170,187,205,0.24);
+  padding:0 50rpx;
+}
+.underway>text{
+  font-size:36rpx;
+  margin-bottom:30rpx;
+  display:block;
+}
+.underway .pic_con{
+  font-size:30rpx;
+   height:80rpx;
+   line-height:80rpx;
+   padding-bottom:20rpx;
+}
+.underway .pic_con .pic{
+  width:300rpx;
+  height:80rpx;
+  border-radius:10rpx;
+  display:block;
+  float:right;
+  text-align:center;
+  color:#3cc43f;
+  
+}
+.dateday {
+  line-height:90rpx;
+  padding-top:10rpx;
+  text-align: left;
+  display:block;
+   width:670rpx;
+   font-size:50rpx;
+  margin:0 auto;
+  font-weight:900;
+  position: relative;
+  padding-left:50rpx;
+  box-sizing:border-box;
+}
+.dateday view{
+        width:34rpx;
+        height:34rpx;
+        border-radius:50%;
+        position: absolute;
+        left:0;
+        top:30rpx;
+    }
+  .underway .dateday view text{
+        position:absolute;
+        top:8px;
+        left:8px;
+        width:18rpx;
+        height: 18rpx;
+        background:#3cc43f;
+        border-radius:50%;
+        display:block;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+     .underway .dateday view text::before{
+         content:'';
+        width:18rpx;
+        height:18rpx;
+        border-radius:50%;
+        position:absolute;
+        background:#3cc43f;
+        top:0px;
+        left:0px;
+        animation: mydot 1.5s infinite ease;
+        animation-delay: 0.4s;
+        z-index: 0
+    }
+
+ @keyframes mydot{
+       0%{
+        transform: scale(1);
+       }
+       10%{
+        transform: scale(1.3);
+         opacity: 0.6;
+       }
+       20%{
+        transform: scale(1.5);
+        opacity: 0.6;
+       }
+       30%{
+        transform: scale(1.7);
+        opacity: 0.5;
+       }
+       40%{
+        transform: scale(1.9);
+        opacity: 0.4;
+       }
+       50%{
+        transform: scale(2);
+        opacity: 0.3;
+       }
+       60%{
+        transform: scale(2.1);
+        opacity: 0.2;
+       }
+       70%{
+           transform: scale(2.5);
+           opacity: 0.1;
+ 
+       }
+       80%{
+           transform:scale(2.6);
+           opacity: 0.05;
+       }
+       90%{
+           transform:scale(2.7);
+           opacity:0.1;
+       }
+ 
+       100%{
+           transform: scale(2.8);
+           opacity: 0; 
+       }
+   }
+     .underway_content>text{
+       text-align:center;
+       font-size:30rpx;
+       line-height:60rpx;
+       padding-top:20rpx;
+       display:block;
+     }
+    .underway_content>image{
+        margin:0 auto;
+        display:block;
+        width:680rpx;
+    }

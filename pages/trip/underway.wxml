@@ -1,0 +1,25 @@
+<view class='container'>
+    <view class='underway'>
+        <view class="dateday"><view><text></text></view><text>2018.11.10</text></view>
+        <text>路线名称共两行，路线名称共两行，路名称共两行</text>
+        <view class='pic_con'><text>教师：张章</text><text class='pic'>个人相册</text></view>
+    </view>
+    <view class='underway_content'>
+    <!-- 有内容 -->
+      <view>
+        <text>第一天</text>
+        <!-- <text class="text_no">老师暂未发布精彩内容，敬请期待吧。</text> -->
+        <image src='../images/xiaoa.jpg'></image>
+        <image src='../images/xiaoa.jpg'></image>
+        <image src='../images/xiaoa.jpg'></image>
+        <image src='../images/xiaoa.jpg'></image>
+      </view>
+      <view>
+        <text>第二天</text>
+        <image src='../images/xiaoa.jpg'></image>
+        <image src='../images/xiaoa.jpg'></image>
+        <image src='../images/xiaoa.jpg'></image>
+        <image src='../images/xiaoa.jpg'></image>
+      </view> 
+    </view>
+</view>
