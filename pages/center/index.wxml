@@ -1,7 +1,24 @@
-<view class='center_top'>
-  <image src="../images/xiaoa.jpg"></image>
-  <view>
-      <text>得意的小女生</text>
-      <text>139****12345</text>
+<view class='contaier'>
+  <view class='center_top'>
+    <image src="../images/xiaoa.jpg"></image>
+    <view>
+        <text>得意的小女生</text>
+        <text>139****12345</text>
+    </view>
   </view>
+  <!-- 订单行程 -->
+  <view class='center_center'>
+      <text class='tit' style='font-weight:bold;'>订单行程</text>
+      <view class='center_content'>
+        <view><image src='../images/daizhifu.png'></image><text>待支付</text><text class='size'>2</text></view>
+        <view><image src='../images/yizhifu.png'></image><text>已支付</text><text class='size'>2</text></view>
+        <view><image src='../images/tuikuanzhong.png'></image><text>退款确认中</text><text class='size'>2</text></view>
+        <view><image src='../images/yituikuan.png'></image><text>已退款</text><text class='size'>2</text></view>
+      </view>
+      <view class='tit'><image src='../images/xinxi.png'></image><text>学生信息</text></view>
+      <view class='tit'><image src='../images/shoucang.png'></image><text>我的收藏</text></view>
+      <view class='tit'><image src='../images/dizhi.png'></image><text>地址管理</text></view>
+      <view class='tit'><image src='../images/jiaoshi.png'></image><text>教师中心</text></view>
+  </view>
+  <view class='login'>退出登录</view>
 </view>
