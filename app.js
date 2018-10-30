@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    apiurl: "http://api.tours.xiaokey.cn"
+    apiurl: "https://api.jinguoxue.com"
   }
 })
