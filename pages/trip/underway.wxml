@@ -8,7 +8,7 @@
     <!-- 有内容 -->
       <view>
         <text>第一天</text>
-        <!-- <text class="text_no">老师暂未发布精彩内容，敬请期待吧。</text> -->
+        <!-- <text class="text_no">老师暂未发布精彩内容，敬请期待吧qq。</text> -->
         <image src='../images/xiaoa.jpg'></image>
         <image src='../images/xiaoa.jpg'></image>
         <image src='../images/xiaoa.jpg'></image>

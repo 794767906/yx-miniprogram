@@ -1,5 +1,6 @@
 page {
   background-color: #f1f6fb;
+  padding-bottom:100rpx;
 }
 .container{
   text-align: left;

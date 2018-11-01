@@ -1,0 +1,33 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<!--全部订单-->
+<view class="item_con" hidden="{{currentTab!==0}}">
+  <view class='list'>
+    <text class='state'>学生报名<text class='tai'>待支付</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天往返机票国航空自由行</text>
+      <text>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+  </view>
+</view>
+ 
+<!--待支付-->
+<view class="item_con" hidden="{{currentTab!==1}}">
+  tab_02
+</view>
+ 
+<!--已支付-->
+<view class="item_con" hidden="{{currentTab!==2}}">
+  tab_03
+</view>
+<!--退款确认中-->
+<view class="item_con" hidden="{{currentTab!==3}}">
+  tab_04
+</view>
+<!--已退款-->
+<view class="item_con" hidden="{{currentTab!==4}}">
+  tab_05
+</view>

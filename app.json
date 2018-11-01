@@ -1,6 +1,13 @@
 {
   "pages":[
 
+<<<<<<< HEAD
+=======
+
+    "pages/login/index",
+    "pages/center/list",
+
+>>>>>>> HEAD
     "pages/index/index",
     "pages/trip/tobegin",
     "pages/trip/underway",
@@ -17,31 +24,6 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black",
     "backgroundColor": "#f1f6fb"
-  },
-  "tabBar":{
-    "color":"#aeaeae",
-    "selectedColor":"#333",
-    "lineHeight":"40rpx",
-    "list":[
-      {
-        "iconPath": "/pages/images/a.png",
-        "selectedIconPath": "/pages/images/acur.png",
-        "pagePath":"pages/index/index",
-        "text":"首页"
-      },
-      {
-        "iconPath": "/pages/images/b.png",
-        "selectedIconPath": "/pages/images/bcur.png",
-        "pagePath": "pages/trip/index",
-        "text": "我的行程"
-      },
-      {
-          "iconPath": "/pages/images/c.png",
-          "selectedIconPath": "/pages/images/ccur.png",
-          "pagePath": "pages/center/index",
-          "text": "个人中心"
-     
-      }
-    ]
   }
+  
 }
