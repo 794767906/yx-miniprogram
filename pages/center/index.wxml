@@ -21,4 +21,6 @@
       <view class='tit'><image src='../images/jiaoshi.png'></image><text>教师中心</text></view>
   </view>
   <view class='login'>退出登录</view>
+     <import src="../tabbar" />
+  <template is="tabBar" data="{{tabBar}}" />
 </view>

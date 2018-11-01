@@ -1,0 +1,12 @@
+<view class='container'>
+ <view class='phone'>
+    <image src='/pages/images/shouji.png'></image>
+    <input placeholder="请输入你的手机号" bindinput="bindvalue" auto-focus/>
+ </view>
+ <view class='code'>
+    <image src='/pages/images/yanzheng.png'></image>
+    <input placeholder="请输入手机验证码" type='password'/>
+    <button bindtap="verification">{{btntext}}</button>
+ </view>
+ <button>登录</button>
+</view>

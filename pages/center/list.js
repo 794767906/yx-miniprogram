@@ -1,29 +1,23 @@
-// pages/trip/index.js
-const app = getApp();
+// pages/center/list.js
+var app = getApp()
 Page({
-  aa: function () {
-    wx.navigateTo({
-      url: 'underway'
-    })
-  },
- bb: function () {
-    wx.navigateTo({
-      url: 'tobegin'
-    })
-  },
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    navbar: ['全部订单', '待支付', '已支付','退款确认中','已退款'],
+    currentTab: 0
+  },
+  navbarTap: function (e) {
+    this.setData({
+      currentTab: e.currentTarget.dataset.idx
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    app.editTabBar();
+
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -72,5 +66,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-  
 })

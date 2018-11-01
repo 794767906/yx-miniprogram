@@ -35,7 +35,6 @@ page {
   padding-top:10rpx;
   text-align: left;
   display:block;
-   width:670rpx;
    font-size:50rpx;
   margin:0 auto;
   font-weight:900;
@@ -133,6 +132,7 @@ page {
 }
 .underway_content view{
   width:100%;
+  overflow:hidden;
 }
 .underway_content view text{
   font-size:34rpx;

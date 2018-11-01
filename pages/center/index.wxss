@@ -1,9 +1,8 @@
 page {
   background-color: #f1f6fb;
+  padding-bottom:150rpx;
 }
-.contaier{
-  padding-bottom:50rpx;
-}
+
 .center_top{
   padding:60rpx 0 60rpx 60rpx;
   overflow:hidden;

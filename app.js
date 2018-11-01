@@ -36,5 +36,96 @@ App({
   globalData: {
     userInfo: null,
     apiurl: "http://api.tours.xiaokey.cn"
+  },
+  editTabBar: function () {
+
+    var _curPageArr = getCurrentPages();
+
+    var _curPage = _curPageArr[_curPageArr.length - 1
+    ];
+
+    var _pagePath = _curPage.__route__;
+
+    if (_pagePath.indexOf('/') != 0) {
+
+      _pagePath = '/' + _pagePath;
+    }
+
+    var tabBar = this.globalData.tabBar;
+
+    for (var i = 0; i < tabBar.list.length; i++) {
+
+      tabBar.list[i].active = false;
+
+      if (tabBar.list[i].pagePath == _pagePath) {
+
+        tabBar.list[i].active = true;//根据页面地址设置当前页面状态
+      }
+    }
+
+    _curPage.setData({
+
+      tabBar: tabBar
+    });
+  },
+
+  globalData: {
+
+    userInfo: null,
+
+    tabBar: {
+
+      color: "#aeaeae",
+
+      selectedColor: "#333",
+
+
+      list: [
+        {
+          selectedIconPath: "/pages/images/acur.png",
+
+          iconPath: "/pages/images/a.png",
+
+          pagePath: "/pages/index/index",
+
+          text: "首页",
+
+          clas: "menu-item",
+
+          selected: false,
+        },
+        {
+
+          selectedIconPath: "/pages/images/bcur.png",
+
+          iconPath: "/pages/images/b.png",
+
+          pagePath: "/pages/trip/index",
+
+          text: "我的行程",
+
+          clas: "menu-item",
+
+          selected: false
+        },
+        {
+
+          selectedIconPath: "/pages/images/ccur.png",
+
+          iconPath: "/pages/images/c.png",
+
+          pagePath: "/pages/center/index",
+
+          text: "个人中心",
+
+          clas: "menu-item",
+
+          selected: false
+        }
+
+      ],
+
+      position: "bottom"
+    }
   }
 })

@@ -83,6 +83,6 @@
       </view>
     </view>
   </view>
-  <!-- <import src="../template/foot"/>
-  <template is="foot"></template> -->
+  <import src="../tabbar" />
+  <template is="tabBar" data="{{tabBar}}" />
 </view>

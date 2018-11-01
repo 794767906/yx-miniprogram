@@ -53,6 +53,7 @@
 //   }
 // })
 
+const app = getApp();
 wx.getSystemInfo({
   success: function (res) {
     var clientHeight = res.windowHeight,
@@ -79,4 +80,7 @@ Page({
       'https://p3.pstatp.com/large/31fa0003ed7228adf421'
     ],
   },
+  onLoad: function (options) {
+    app.editTabBar();
+  }
 })

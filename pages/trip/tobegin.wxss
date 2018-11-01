@@ -37,7 +37,6 @@ page {
   padding-top:10rpx;
   text-align: left;
   display:block;
-   width:670rpx;
    font-size:50rpx;
   margin:0 auto;
   font-weight:900;
@@ -55,31 +54,14 @@ page {
     }
   .underway .dateday view text{
         position:absolute;
-        top:8px;
-        left:8px;
-        width:18rpx;
-        height: 18rpx;
-        background:#3cc43f;
+        top:6px;
+        left:6px;
+        width:22rpx;
+        height: 22rpx;
+        background:#ffd52e;
         border-radius:50%;
         display:block;
-        white-space: nowrap;
-        text-align: center;
     }
-    
-     .underway .dateday view text::before{
-         content:'';
-        width:18rpx;
-        height:18rpx;
-        border-radius:50%;
-        position:absolute;
-        background:#3cc43f;
-        top:0px;
-        left:0px;
-        animation: mydot 1.5s infinite ease;
-        animation-delay: 0.4s;
-        z-index: 0
-    }
-
  @keyframes mydot{
        0%{
         transform: scale(1);
