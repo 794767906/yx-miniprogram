@@ -1,13 +1,18 @@
 {
   "pages":[
+
     "pages/login/index",
     "pages/center/list",
+
     "pages/index/index",
     "pages/trip/tobegin",
     "pages/trip/underway",
     "pages/trip/index",
     "pages/center/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+
+    "pages/template/foot"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

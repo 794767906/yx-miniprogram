@@ -3,13 +3,36 @@
   <swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}">
         <swiper-item>
-          <image src="{{item}}" class="slide-image" />
+          <image src="{{item.index_pic}}" class="slide-image" />
         </swiper-item>
       </block>
   </swiper>
   <!-- 优质路线推荐 -->
   <view class="route">
     <text class='title'>优质路线推荐</text>
+     <block wx:for="{{hostlist}}" wx:for-item="item">
+       <view class='list'>
+      <view class='img'><image src='{{item.index_pic}}'></image><image class='hot' src='../images/hot.png'></image></view>
+      <view class='list_left'>
+          <text class='name'>{{item.name}}</text>
+          <text class='price'>
+              <text class='nowprice'>￥{{item.price}}</text>
+              <text class='yuanprice'>原价：<text>{{item.old_price}}</text></text>
+          </text>
+      </view>
+      <view class='list_right'>
+      <block wx:if="{{item.type==1}}">
+           <image src="../images/xueshengtuan.png"></image>
+      </block>
+      <block wx:else>
+          <image src="../images/jiazhangtuan.png"></image>
+      </block>
+         
+          <text>{{item.joined_count}}人已加入</text>
+      </view>
+    </view>
+      </block>
+      <!-- 
     <view class='list'>
       <view class='img'><image src='../images/a.jpg'></image><image class='hot' src='../images/hot.png'></image></view>
       <view class='list_left'>
@@ -38,20 +61,24 @@
           <text>2839人已加入</text>
       </view>
     </view>
+     -->
   </view>
   <!-- 往期精彩路线 -->
    <view class="route wonderful">
     <text class='title'>往期精彩路线</text>
+      <block wx:for="{{hostlist}}" wx:for-item="item">
     <view class='list'>
-      <view class='img'><image src='../images/xiaoa.jpg'></image></view>
+      <view class='img'><image src='{{item.index_pic}}'></image></view>
       <view class='list_left'>
-          <text class='name'>“北方马尔代夫”月坨岛乐享两日游</text>
+          <text class='name'>{{item.name}}</text>
           <view class='price'>
-             <text class='nowprice'>￥459</text>
-              <text class='people'>565656人已加入</text>
+             <text class='nowprice'>￥{{item.price}}</text>
+              <text class='people'>{{item.joined_count}}人已加入</text>
           </view>
       </view>
     </view>
+     </block>
+     <!--
     <view class='list'>
       <view class='img'><image src='../images/a.jpg'></image></view>
       <view class='list_left'>
@@ -82,6 +109,7 @@
           </view>
       </view>
     </view>
+    -->
   </view>
   <import src="../tabbar" />
   <template is="tabBar" data="{{tabBar}}" />

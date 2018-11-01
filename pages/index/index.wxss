@@ -51,6 +51,7 @@ swiper .wx-swiper-dot-active{
 }
 .list{
   width:100%;
+  overflow:hidden;
 }
 .wonderful .list{
   width:340rpx;
