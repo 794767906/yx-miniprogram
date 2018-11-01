@@ -1,7 +1,11 @@
 //index.js
 
 
-const app = getApp();
+
+
+
+//获取应用实例sssaaa
+const app = getApp()
 
 wx.getSystemInfo({
   success: function (res) {
@@ -26,9 +30,9 @@ Page({
     pastlist:{}
   },
 
+
   onLoad: function (options) {
     //app.editTabBar();
-
     this.banner();
     this.route(1);
     this.route(0);
