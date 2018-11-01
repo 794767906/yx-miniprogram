@@ -35,9 +35,8 @@ App({
   },
   globalData: {
     userInfo: null,
- 
-
     apiurl: "http://api.tours.xiaokey.cn"
+
   },
   editTabBar: function () {
 
@@ -129,7 +128,5 @@ App({
 
       position: "bottom"
     }
-
- 
   }
 })

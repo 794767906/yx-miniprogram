@@ -1,10 +1,9 @@
 {
   "pages":[
+
  
     "pages/login/index",
     "pages/center/list",
-
- 
     "pages/index/index",
     "pages/trip/tobegin",
     "pages/trip/underway",
