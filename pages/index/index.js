@@ -1,12 +1,7 @@
 //index.js
-
-
-
-
-
-//获取应用实例sssaaa
+ 
 const app = getApp()
-
+ 
 wx.getSystemInfo({
   success: function (res) {
     var clientHeight = res.windowHeight,
@@ -28,6 +23,7 @@ Page({
     imgUrls: {},
     hostlist:{},
     pastlist:{}
+ 
   },
 
 
