@@ -35,11 +35,9 @@ App({
   },
   globalData: {
     userInfo: null,
-<<<<<<< HEAD
-    apiurl: "https://api.jinguoxue.com"
-=======
 
-    apiurl: "http://api.tours.xiaokey.cn"
+    apiurl: "https://api.jinguoxue.com"
+
   },
   editTabBar: function () {
 
@@ -132,6 +130,5 @@ App({
       position: "bottom"
     }
 
->>>>>>> HEAD
   }
 })

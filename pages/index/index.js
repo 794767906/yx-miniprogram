@@ -1,8 +1,5 @@
 //index.js
-<<<<<<< HEAD
-//获取应用实例sssaaa
-const app = getApp()
-=======
+
 
 
 
@@ -11,7 +8,6 @@ const app = getApp()
 //获取应用实例sssaaa
 const app = getApp()
 
->>>>>>> HEAD
 wx.getSystemInfo({
   success: function (res) {
     var clientHeight = res.windowHeight,
@@ -33,7 +29,7 @@ Page({
     imgUrls: {},
     hostlist:{},
     pastlist:{}
-<<<<<<< HEAD
+
   },
   onLoad: function () {
     this.banner();
@@ -68,8 +64,8 @@ Page({
       }
     })
   },
-=======
-  },
+
+
 
 
   onLoad: function (options) {
@@ -106,7 +102,7 @@ Page({
       }
     })
   },
->>>>>>> HEAD
+
   //路线
   route:function(ishost){
     if(ishost){
@@ -147,10 +143,6 @@ Page({
 
       }
     })
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> HEAD
   }
 })
