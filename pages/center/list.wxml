@@ -1,33 +1,122 @@
 <view class="navbar">
-  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}<text class='new'></text></text>
 </view>
 
 <!--全部订单-->
 <view class="item_con" hidden="{{currentTab!==0}}">
-  <view class='list'>
+<!-- 待支付状态 -->
+ <view class='list'>
     <text class='state'>学生报名<text class='tai'>待支付</text></text>
     <view class='info'>
       <image src='/pages/images/xiaoa.jpg'></image>
-      <text>直飞日本东京5-6天往返机票国航空自由行</text>
-      <text>疯狂抢购 开元草清房车营第海盐亲子游</text>
+      <text>直飞日本东京5-6天往返机票国航空自由行直飞日本东京5-6天往返机票国航空自由行</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
     </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button><button>取消订单</button></view>
+  </view>
+  <!-- 已支付状态 -->
+  <view class='list paid'>
+    <text class='state'>学生报名<text class='tai'>已支付</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button><button>取消订单</button></view>
+  </view>
+  <!-- 退款确认中 -->
+  <view class='list'>
+    <text class='state'>学生报名<text class='tai'>退款确认中</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button></view>
+  </view>
+   <!-- 以退款 -->
+   <view class='list refunded'>
+    <text class='state'>学生报名<text class='tai'>已退款</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button></view>
   </view>
 </view>
- 
 <!--待支付-->
 <view class="item_con" hidden="{{currentTab!==1}}">
-  tab_02
+  <!-- 待支付状态 -->
+ <view class='list'>
+    <text class='state'>学生报名<text class='tai'>待支付</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天往返机票国航空自由行直飞日本东京5-6天往返机票国航空自由行</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button><button>取消订单</button></view>
+  </view>
 </view>
  
 <!--已支付-->
 <view class="item_con" hidden="{{currentTab!==2}}">
-  tab_03
+  <!-- 已支付状态 -->
+  <view class='list paid'>
+    <text class='state'>学生报名<text class='tai'>已支付</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button><button>取消订单</button></view>
+  </view>
 </view>
 <!--退款确认中-->
 <view class="item_con" hidden="{{currentTab!==3}}">
-  tab_04
+ <!-- 退款确认中 -->
+  <view class='list'>
+    <text class='state'>学生报名<text class='tai'>退款确认中</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button></view>
+  </view>
 </view>
 <!--已退款-->
 <view class="item_con" hidden="{{currentTab!==4}}">
-  tab_05
+   <!-- 以退款 -->
+   <view class='list refunded'>
+    <text class='state'>学生报名<text class='tai'>已退款</text></text>
+    <view class='info'>
+      <image src='/pages/images/xiaoa.jpg'></image>
+      <text>直飞日本东京5-6天</text>
+      <text class='xinxi'>疯狂抢购 开元草清房车营第海盐亲子游</text>
+    </view>
+    <text class='price'>总计：￥1349</text>
+    <view class='btn'><button>联系客服</button></view>
+  </view>
 </view>
+<!-- 确认取消弹窗 -->
+  <view class='cancel' style='display:none;'>
+    <view class='cancel_con'>
+      <view class='tit'>取消原因<text>×</text></view>
+        <view>
+          <text>买错/不想要</text>
+          <text>不喜欢了</text>
+          <text class='cur'>与计划行程不符</text>
+          <text>计划变更</text>
+          <text>有更好路线选择</text>
+        </view>
+        <button>确认取消</button>
+    </view>
+  </view>

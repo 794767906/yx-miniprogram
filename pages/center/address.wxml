@@ -1,0 +1,23 @@
+<view class="container">
+<text class='wu' style='display:none;'>暂未设置地址，快去设置吧～</text>
+   <scroll-view style='height:{{height}}px;' scroll-y='{{scrollY}}' class='msg-list' bindscroll = 'onScroll'>
+       <view wx:for="{{msgList}}" wx:key="id"  class='msg-item' animation='{{item.wrapAnimation}}'> 
+            <view id='{{item.id}}' class='msg' animation='{{item.animation}}' bindtouchstart='ontouchstart' bindtouchmove='ontouchmove' bindtouchend='ontouchend'>
+               <text class='user'>{{item.a}}<text>{{item.b}}</text></text>
+                <text class='place'>{{item.c}}<text>{{item.d}}</text></text>
+                <image src='/pages/images/xiugai.png'></image>
+            </view>
+            <view class='msg-menu'>
+                <view id='{{item.id}}' class='menu-mark'>
+                    设置默认
+                </view>
+                 <view id='{{item.id}}' class='menu-delete' bindtap='onDeleteMsgTap' bindlongtap='onDeleteMsgLongtap'>
+                    删除
+                </view>
+            </view>
+       </view>
+   </scroll-view>
+   <view class='add'>
+    <button bindtap="add">+ 新增地址</button>
+  </view>
+</view>

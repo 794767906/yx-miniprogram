@@ -8,7 +8,7 @@
   </view>
   <!-- 订单行程 -->
   <view class='center_center'>
-      <text class='tit' style='font-weight:bold;'>订单行程</text>
+      <text class='tit' style='font-weight:bold;' bindtap='order'>订单行程</text>
       <view class='center_content'>
         <view><image src='../images/daizhifu.png'></image><text>待支付</text><text class='size'>2</text></view>
         <view><image src='../images/yizhifu.png'></image><text>已支付</text><text class='size'>2</text></view>
@@ -16,8 +16,8 @@
         <view><image src='../images/yituikuan.png'></image><text>已退款</text><text class='size'>2</text></view>
       </view>
       <view class='tit'><image src='../images/xinxi.png'></image><text>学生信息</text></view>
-      <view class='tit'><image src='../images/shoucang.png'></image><text>我的收藏</text></view>
-      <view class='tit'><image src='../images/dizhi.png'></image><text>地址管理</text></view>
+      <view class='tit' bindtap='collect'><image src='../images/shoucang.png'></image><text>我的收藏</text></view>
+      <view class='tit' bindtap='address'><image src='../images/dizhi.png'></image><text>地址管理</text></view>
       <view class='tit'><image src='../images/jiaoshi.png'></image><text>教师中心</text></view>
   </view>
   <view class='login'>退出登录</view>

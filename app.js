@@ -1,6 +1,10 @@
 //app.js
 App({
+  data:{
+    deviceInfo: {}
+  },
   onLaunch: function () {
+     
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,11 +37,10 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null,
-
-    apiurl: "https://api.jinguoxue.com"
-
+  
+  onLaunch: function () {
+    this.data.deviceInfo = wx.getSystemInfoSync();
+    console.log(this.data.deviceInfo);
   },
   editTabBar: function () {
 
@@ -74,7 +77,7 @@ App({
   globalData: {
 
     userInfo: null,
-
+    apiurl: "https://api.jinguoxue.com",
     tabBar: {
 
       color: "#aeaeae",
@@ -129,6 +132,5 @@ App({
 
       position: "bottom"
     }
-
   }
 })

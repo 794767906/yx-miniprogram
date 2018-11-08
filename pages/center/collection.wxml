@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class="list">
+    <image class="pic" src='/pages/images/a.jpg'></image>
+    <text class='name'>福州永泰中国云顶福州永泰中国云顶福州永泰中国云顶</text>
+    <view class='price'>
+          <text class='nowprice'>￥459</text>
+          <text class='yuanprice'>原价：<text>192823</text></text>
+    </view>
+    <image class="collect" src='/pages/images/shoucangcur.png'></image>
+  </view>
+  <view class="list">
+    <image class="pic" src='/pages/images/a.jpg'></image>
+    <text class='name'>福州永泰中国云顶福州永泰中国云顶福州永泰中国云顶</text>
+    <view class='price'>
+          <text class='nowprice'>￥459</text>
+          <text class='yuanprice'>原价：<text>192823</text></text>
+    </view>
+    <image class="collect" src='/pages/images/weishoucang.png'></image>
+  </view>
+</view>

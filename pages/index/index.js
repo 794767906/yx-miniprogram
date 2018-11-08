@@ -1,10 +1,4 @@
-//index.js
-
-
-
-
-
-
+//我是萌萌哒前端
 //获取应用实例sssaaa
 const app = getApp()
 
@@ -31,43 +25,6 @@ Page({
     pastlist:{}
 
   },
-  onLoad: function () {
-    this.banner();
-    this.route(1);
-    this.route(0);
-  },
-  //请求banner
-  banner:function(){
-    var that = this;
-    wx.request({
-      url: app.globalData.apiurl +'/api/v1/index/banner/list',
-      method: 'get',
-      success: function (res) {
-         
-        if (res.data.status_code == 200) {
-          var list = res.data.data.list;
-          for (var i in list) {
-            var imagelist = list[i].index_pic.split(",");
-            list[i].index_pic = imagelist[0];
-          }
-         that.setData({
-           imgUrls:list
-         })
-        } else {
-          wx.showModal({
-            title: res.data.msg,
-            showCancel: false,
-            duration: 2000
-          });
-        }
-
-      }
-    })
-  },
-
-
-
-
   onLoad: function (options) {
     //app.editTabBar();
     this.banner();
@@ -102,7 +59,6 @@ Page({
       }
     })
   },
-
   //路线
   route:function(ishost){
     if(ishost){

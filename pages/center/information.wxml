@@ -1,0 +1,42 @@
+<view class='scroll_view_border'>
+    <view class="srcoll_view"><image src="/pages/images/tishi.png"></image>为了给你带来更优质的体验请您务必认真、详细地填写下列的各项信息，信息如有变化，请及时修改!</view>
+</view>
+<!-- 必填信息 -->
+<view class='requir'>
+  <text>*必填信息</text>
+  <view><text><text>*</text>姓名(中文)</text><input type="text" placeholder='请输入'></input></view>
+  <view><text><text>*</text>身份证号</text><input type="idcard" placeholder='请输入'></input></view>
+  <view><text><text>*</text>性别</text><input type="text" placeholder='请输入'></input></view>
+  <view><text><text>*</text>身高</text><input class="tall" type="number" placeholder='请输入'></input><text class='dan'>(cm)</text></view>
+</view>
+<!-- 非必填信息 -->
+<view class='requir'>
+  <text>非必填信息</text>
+  <view><text>性格</text><input type="text" placeholder='请输入'></input></view>
+  <view><text>爱好</text><input type="idcard" placeholder='请输入'></input></view>
+  <view><text>曾用名</text><input type="text" placeholder='请输入'></input></view>
+  <view><text>出生日期</text><input type="text" placeholder='请选择'></input></view>
+  <view><text>出生地</text><input type="text" placeholder='请选择'></input></view>
+   <view><text>名族</text><input type="text" placeholder='请输入'></input></view>
+  <view><text>体重</text><input class="tall" type="number" placeholder='请输入'></input><text class='dan'>(kg)</text></view>
+   <view><text>学生本人手机号码</text><input type="text" placeholder='请输入'></input></view>
+  <view><text>日常联络电子邮箱</text><input type="text" placeholder='请输入'></input></view>
+   <view><text>是否是大语文的学生</text><input type="text" placeholder='请选择'></input></view>
+</view>
+<!-- 补充信息 -->
+<view class='requir'>
+  <text>补充信息</text>
+  <view><text>您是否有同团的人需要住在一起</text><input type="text" style="width:100rpx;" placeholder='请选择'></input></view>
+  <view><text>您是否是少数民族</text><input type="idcard" placeholder='请选择'></input></view>
+   <view class='radio'>
+      <text>是否过敏（动物、植物、食物、药品等）</text>
+      <checkbox-group >  <label class="checkbox" wx:for-items="{{items}}">  <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}  </label> </checkbox-group>
+   </view>
+   <view><text>其他</text><input type="text" placeholder='如有其他病史请输入'></input></view>
+   <view class='texta'>
+    <textarea placeholder-style="margin:30rpx 0;" placeholder='您有没有其他过往病史？近期是否做过手术？有没有药物过敏或长期用药？如有，请如实、详细说明。'>
+</textarea>
+   </view>
+</view>
+<button>保存</button>
+

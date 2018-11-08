@@ -3,10 +3,14 @@
 
 
 
-    "pages/login/index",
-    "pages/center/list",
 
     "pages/index/index",
+    "pages/center/fill",
+    "pages/center/address",
+    "pages/center/collection",
+    "pages/center/list",
+    "pages/index/details",
+    "pages/login/index",
     "pages/trip/tobegin",
     "pages/trip/underway",
     "pages/trip/index",

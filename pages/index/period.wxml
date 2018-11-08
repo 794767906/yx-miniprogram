@@ -1,0 +1,70 @@
+<view class="container">
+  <view class='top_con'>
+   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+    </swiper>  
+     <text class='name'>福州永泰中国云顶福州永泰中国云顶福州永泰中国云顶</text>
+     <view class='price'>
+        <text class='nowprice'>￥459</text>
+        <text class='yuanprice'>原价：<text>192823</text></text>
+        <text class='people'>235645人已加入 235645想参与</text>
+    </view>
+    </view>
+    <view class='center_con'>
+      <view class="nav bc_white">
+        <text class="{{selected?'active':''}}" bindtap="selected">行程安排</text>
+        <text class="{{selected1?'active':''}}" bindtap="selected1">行程亮点</text>
+    </view>
+      <view class="{{selected?'show':'hidden'}}">
+        <view class='day'>
+          <image src='/pages/images/border.jpg'></image>
+            <view class='day_time'>
+              <text>第一天</text>  
+              <view class='btn'>
+                <button class='preview'>课程预览</button>
+                <button class='spots'>景点解读</button>
+              </view>
+            </view>
+            <text>上午：
+              古北水镇 古北水镇温泉酒店
+              上午：
+              古北水镇 古北水镇温泉酒店
+              上午：
+              古北水镇 古北水镇温泉酒店
+            </text>
+        </view>
+         <view class='day'>
+          <image src='/pages/images/border.jpg'></image>
+            <view class='day_time'>
+              <text>第二天</text>  
+              <view class='btn'>
+                <button class='preview'>课程预览</button>
+                <button class='spots'>景点解读</button>
+              </view>
+            </view>
+            <text>上午：
+              古北水镇 古北水镇温泉酒店
+              上午：
+              古北水镇 古北水镇温泉酒店
+              上午：
+              古北水镇 古北水镇温泉酒店
+            </text>
+        </view>
+      </view>
+      <view class="{{selected1?'show':'hidden'}}">
+              <image src='/pages/images/xiaoa.jpg' bindload="imageLoad" style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+              <image src='/pages/images/xiaoa.jpg' bindload="imageLoad" style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+              <image src='/pages/images/xiaoa.jpg' bindload="imageLoad" style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+      </view>
+    </view>
+    <view class='bottom_con'>
+      <view><image src='/pages/images/zixun.png'></image>咨询客服</view>
+      <button class='collect_btn'><image src='/pages/images/baishoucang.png'></image>收藏</button>
+    </view>
+</view>
+<!-- 默认弹窗 -->
+<view class='def'><text>收藏成功</text></view>

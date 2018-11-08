@@ -1,0 +1,67 @@
+<view class='container'>
+<!-- 无地址状态 -->
+ <view class='adress'>
+    <view class='zanwei'>暂未设置地址<text  bindtap='aa'>去设置</text></view>
+    <image class="di_bg" src="/pages/images/di.png"></image>
+    <image src='/pages/images/jian.png' class='rightkey'  bindtap='aa'></image>
+  </view>
+<!-- 有地址状态 -->
+  <view class='adress' style='display:none;'>
+    <text class='user'>汤婆子<text>186****1120</text></text>
+    <text class='place'>北京市 北京市 海淀区<text>七燕路一号院9号楼十单元16层东户1623</text></text>
+    <image class="di_bg" src="/pages/images/di.png"></image>
+    <image src='/pages/images/jian.png' class='rightkey'></image>
+  </view>
+  <view class='adress_con'>
+    <view class='quota'>
+       <image src='/pages/images/xiaoa.jpg'></image>
+        <text class='price'>￥1349</text>
+        <text>仅余10个名额</text>
+    </view>
+    <!-- 选择出发日期 -->
+    <view class='dateof'>
+        <text>请选择您的出发日期</text>
+        <view><text>2018.08.08</text>张杰</view>
+        <view class='active'><text>2018.08.08</text>张杰</view>
+        <view class='no'><text>2018.08.08</text>张杰</view>
+        <view><text>2018.08.08</text>张杰</view>
+        <view><text>2018.08.08</text>张杰</view>
+        <view><text>2018.08.08</text>张杰</view>
+        <text>请选择团队类别</text>
+        <view style='line-height:70rpx;'  class="{{selected?'active':''}}" bindtap="selected">学生报名</view>
+        <view style='line-height:70rpx;'  class="{{selected1?'active':''}}" bindtap="selected1">家长报名</view>
+    </view>
+      <!-- 填写学生信息 -->
+    <view  class="{{selected?'show student':'hidden student'}}">
+        <text><text style='color:#ff3a3a'>*</text> 暂未填写学生信息</text>
+        <text class='write'>去填写</text>
+    </view>
+    <!-- 填写家长信息 -->
+    <view class="{{selected1?'show parent':'hidden parent'}}">
+        <text>家长信息</text>
+        <image src="/pages/images/jia.png"></image>
+        <view>姓名<input placeholder='请输入'></input></view>
+        <view>性别<input placeholder='请输入'></input></view>
+        <view>手机号码<input placeholder='请输入'></input></view>
+        <view>身份证号<input placeholder='请输入'></input></view>
+    </view>
+      <!-- 购买数量 -->
+    <view class='size'>
+        <text>购买数量</text>
+        <view>
+          <image class="{{minusStatus}}" bindtap="bindMinus" src='/pages/images/jianfa.png'></image>
+          <input type="number" bindchange="bindManual" value="{{numberone}}" />  
+          <image class="normal" bindtap="bindPlus" src='/pages/images/jia.png'></image>
+        </view>
+    </view>
+    <!-- 支付方式 -->
+    <view class='payfor'>
+      <text>支付方式</text>
+      <view   class='{{num==1?"active":""}}' data-num='1' catchtap='changeOil'><image src='/pages/images/weixinzhifu.png'></image>微信支付</view>
+      <view  class='{{num==2?"active":""}}' data-num='2' catchtap='changeOil'> <image src='/pages/images/xianxiazhifu.png'></image>线下支付</view>
+      <text class="{{num==2?'show tishi':'hidden tishi'}}">*选择线下支付方式，请在订单详情中查看游学对公账户信息，进行对公转账</text>
+    </view>
+    <view class='agreed active'>我同意<text>《游学用户协议》</text></view>
+  </view>
+  <button>确认参与</button>
+</view>
