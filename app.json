@@ -1,18 +1,23 @@
 {
   "pages":[
-
- 
-    "pages/login/index",
-    "pages/center/list",
+    "pages/center/information",
+    "pages/center/index",
+   
+    "pages/index/test",
+    "pages/index/period",
+    "pages/index/part",
     "pages/index/index",
+    "pages/center/fill",
+    "pages/center/address",
+    "pages/center/collection",
+    "pages/center/list",
+    "pages/index/details",
+    "pages/login/index",
     "pages/trip/tobegin",
     "pages/trip/underway",
     "pages/trip/index",
-    "pages/center/index",
     "pages/logs/logs",
-
     "pages/template/foot"
-
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,5 +26,4 @@
     "navigationBarTextStyle":"black",
     "backgroundColor": "#f1f6fb"
   }
-  
 }

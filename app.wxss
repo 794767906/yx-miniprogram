@@ -52,3 +52,75 @@ outline: 0;-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0
   box-shadow:6px 0px 13px rgba(117,117,117,0.1);
 
 }
+button::after{
+  border:none;
+}
+.def{
+  position:fixed;
+  bottom:200rpx;
+  color:#fff;
+  display:flex;
+  font-size:30rpx;
+  left:0;
+  right:0;
+}
+.def text{
+  display: flex;
+  align-items:center;
+  padding:15rpx 30rpx;
+  line-height:40rpx;
+  margin:0 auto;
+  background:rgba(0,0,0,0.6);
+  border-radius:10rpx;
+  text-align:center;
+}
+.cancel{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:11;
+}
+.cancel_con{
+  width:100%;
+  height:640rpx;
+  background:#fff;
+  border-radius:20rpx 20rpx 0 0;
+  position:fixed;
+  bottom:0;
+  font-size:30rpx;
+  text-align:center;
+}
+.cancel_con .tit{
+  font-weight:bold;
+  height:90rpx;
+  line-height:90rpx;
+  position:relative;
+}
+.cancel_con .tit text{
+ position:absolute;
+ right:26rpx;
+ top:-10rpx;
+  font-size:80rpx;
+  color:#bbb;
+   font-weight:normal;
+   display:block;
+}
+.cancel_con>view text{
+  display:block;
+  height:90rpx;
+  line-height:90rpx;
+}
+.cancel_con>view text.cur{
+  background:rgba(255,192,192,0.4)
+}
+.cancel_con button{
+  background:-webkit-linear-gradient(left, #ff3b39 , #ff6818);
+  color:#fff;
+  font-size:30rpx;
+  border-radius:0;
+  height:98rpx;
+  line-height:98rpx;
+}

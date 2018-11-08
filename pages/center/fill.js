@@ -1,38 +1,24 @@
-// pages/center/index.js
-
-const app = getApp()
-
+// pages/center/fill.js
 Page({
-  onLoad: function (options) {
-    app.editTabBar();
-  },
-  collect: function () {
-    wx.navigateTo({
-      url: 'collection'
-    })
-  },
-  order: function () {
-    wx.navigateTo({
-      url: 'list'
-    })
-  },
-  address: function () {
-    wx.navigateTo({
-      url: 'address'
-    })
-  },
+
   /**
    * 页面的初始数据
    */
   data: {
-
+    // 省市区三级联动初始化
+    region: ["北京省", "北京市", "海淀区"],
   },
-
+  // 选择省市区函数
+  changeRegin(e) {
+    this.setData({ region: e.detail.value });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
+  onLoad: function (options) {
 
-
+  },
+ 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

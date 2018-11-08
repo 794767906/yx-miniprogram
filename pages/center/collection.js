@@ -1,26 +1,6 @@
-// pages/center/index.js
-
-const app = getApp()
-
+// pages/center/collection.js
 Page({
-  onLoad: function (options) {
-    app.editTabBar();
-  },
-  collect: function () {
-    wx.navigateTo({
-      url: 'collection'
-    })
-  },
-  order: function () {
-    wx.navigateTo({
-      url: 'list'
-    })
-  },
-  address: function () {
-    wx.navigateTo({
-      url: 'address'
-    })
-  },
+
   /**
    * 页面的初始数据
    */
@@ -31,7 +11,9 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  onLoad: function (options) {
 
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

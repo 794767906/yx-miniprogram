@@ -1,0 +1,15 @@
+<!--pages/center/fill.wxml-->
+<view class='container'>
+  <!-- 省级三联动 -->
+  <view class='province'>
+      <view><text>省</text>  <picker bindchange="changeRegin" mode = "region" value="{{region}}"><text>{{region[0]}}</text></picker></view>
+       <view><text>市</text>  <picker bindchange="changeRegin" mode = "region" value="{{region}}"><text>{{region[1]}}</text></picker></view>
+         <view><text>区/县</text>  <picker bindchange="changeRegin" mode = "region" value="{{region}}"><text>{{region[2]}}</text></picker></view>
+  </view>
+   <view class='dec'>
+      <view><text>具体地址</text><input placeholder='立思辰大厦'></input></view>
+      <view><text>联系人</text><input placeholder='某某某'></input></view>
+      <view><text>联系方式</text><input placeholder='13251245689'></input></view>
+  </view>
+  <button>保存</button>
+</view>

@@ -74,8 +74,7 @@ page{
    color:#fff;
 }
 .container>button.cur{
-  background:-webkit-linear-gradient(left, #ffdb17 , #ffcb14); /* Safari 5.1 - 6.0 */
-  box-shadow:0px 6px 20px rgba(255,208,47,0.5);
+   background:-webkit-linear-gradient(left, #ffdb17 , #ffcb14); /* Safari 5.1 - 6.0 */
 }
 button::after{
   border: none;

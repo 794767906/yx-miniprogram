@@ -1,0 +1,108 @@
+/* pages/center/information.wxss */
+page{
+  padding-bottom:50rpx;
+}
+.srcoll_view{
+  position: absolute;
+  top:0rpx;
+  height: 60rpx;
+  font-size:22rpx;
+  white-space: nowrap;
+  line-height: 60rpx;
+  color: #fff;
+  animation:myfirst 20s linear infinite;
+  overflow:hidden;
+  clear:both;
+}
+.srcoll_view image{
+  width:32rpx;
+  height:32rpx;
+  vertical-align: middle;margin-right:10rpx;
+  }
+.scroll_view_border{
+    width:100%;
+  position:relative;
+     background: rgba(255, 30, 30, 0.7);
+    height: 60rpx;
+    overflow:hidden;
+}
+@keyframes myfirst
+{
+  0% {margin-left:750rpx;}
+  100% {margin-left:-900rpx;}
+} 
+.requir{
+  margin-bottom:20rpx;
+}
+.requir>text{
+  line-height:70rpx;
+  height:70rpx;
+  font-size:34rpx;
+  color:#333;
+  padding-left:20rpx;
+}
+.requir>view{
+  margin:0 40rpx;
+  height:100rpx;
+  line-height:100rpx;
+  border-bottom:1rpx solid #eeeeee;
+  font-size:30rpx;
+
+}
+.requir>view text text{
+  color:#e90000;
+}
+.requir>view input{
+  width:400rpx;
+  float:right;
+  height:100rpx;
+  line-height:100rpx;
+  text-align:right;
+}
+.requir>view .tall{
+  margin-right:70rpx;
+}
+.requir>view .dan {
+position:absolute;
+right:40rpx;
+
+}
+.requir>view.radio{
+height:300rpx;
+}
+.requir>view.texta{
+  height:120rpx;
+  padding:20rpx 0;
+}
+.requir>view.texta textarea{
+  line-height:50rpx;
+  font-size:26rpx;
+  height:100rpx;
+  display:block;
+  width:100%;
+  
+}
+.radio>text{
+  width:100%;
+  display:block;
+  
+}
+label{
+margin-right:100rpx;
+text-align:left;
+}
+button{
+  width:670rpx;
+  height:85rpx;
+  line-height:85rpx;
+  background:-webkit-linear-gradient(left, #9ccbff , #7cbaff);
+  border-radius:40rpx;
+  color:#fff;
+  font-size:32rpx;
+  box-shadow:0px 5px 20px #bfdeff;  
+  display:block;
+  margin:80rpx auto 40rpx;
+}
+.button-hover{
+  color:#fff;
+}

@@ -1,6 +1,10 @@
 //app.js
 App({
+  data:{
+    deviceInfo: {}
+  },
   onLaunch: function () {
+     
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -37,6 +41,10 @@ App({
     userInfo: null,
     apiurl: "http://api.tours.xiaokey.cn"
 
+  },
+  onLaunch: function () {
+    this.data.deviceInfo = wx.getSystemInfoSync();
+    console.log(this.data.deviceInfo);
   },
   editTabBar: function () {
 

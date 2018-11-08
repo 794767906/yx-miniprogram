@@ -1,0 +1,57 @@
+/* pages/center/collection.wxss */
+page{
+  background:#f2f7fc;
+}
+.container{
+  padding-bottom:20rpx;
+}
+.list{
+  width:690rpx;
+  margin:0 auto;
+  background:#fff;
+  border-radius:30rpx;
+  box-shadow:0px 0px 20px rgba(170,187,205,0.1);
+  padding:20rpx;
+  overflow:hidden;
+  margin-top:20rpx;
+  box-sizing:border-box;
+  position:relative;
+}
+.list .pic{
+  width:650rpx;
+  height:408rpx;
+}
+.list .name{
+  display:block;
+  margin-top:10rpx;
+  font-size:34rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp:1;
+  width:90%;
+}
+.list .nowprice{
+  float:left;
+  font-weight:bold;
+  font-size:44rpx;
+  color:#ff3a3a;
+  line-height:60rpx;
+}
+.list .yuanprice{
+  font-size:24rpx;
+  color:#aaaaaa;
+  float:left;
+  margin-left:30rpx;
+  line-height:65rpx;
+}
+.list .yuanprice text{
+  text-decoration:line-through;
+}
+.list .collect{
+  width:62rpx;
+  height:59rpx;
+  position:absolute;
+  right:30rpx;
+  bottom:40rpx;
+}
